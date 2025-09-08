@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Calán | Procedimientos Ambulatorios en El Golf</title>
+  <meta name="description" content="Clínica de procedimientos ambulatorios y cirugía menor en El Golf (Metro Alcántara). Derivaciones desde el clúster médico del edificio + telemedicina. Reserva tu evaluación."/>
+  <meta property="og:title" content="Clínica Calán — Procedimientos Ambulatorios" />
+  <meta property="og:description" content="Hub de derivaciones + telemedicina. Box, pabellón menor y agenda online. El Golf, Las Condes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1600&auto=format&fit=crop" />
+  <meta property="og:locale" content="es_CL" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏥</text></svg>">
+  <!-- Tailwind Play CDN (para prototipo rápido). Para producción, compilar Tailwind. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Micro toques */
+    .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); }
+  </style>
+  <!-- JSON-LD básico de organización/servicio de salud -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Clínica Calán",
+    "address": {"@type": "PostalAddress","addressLocality": "Las Condes","addressRegion": "RM","addressCountry": "CL"},
+    "areaServed": "Santiago",
+    "medicalSpecialty": ["Dermatología","Cirugía menor","Traumatología","Otorrinolaringología"],
+    "url": "https://clinica-calan.example",
+    "telephone": "+56-9-XXXXXXXX"
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-semibold text-slate-900">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-100">🏥</span>
+        <span>Clínica Calán</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#servicios" class="hover:text-emerald-700">Servicios</a>
+        <a href="#planes" class="hover:text-emerald-700">Planes</a>
+        <a href="#ubicacion" class="hover:text-emerald-700">Ubicación</a>
+        <a href="#contacto" class="hover:text-emerald-700">Contacto</a>
+      </nav>
+      <a href="#contacto" class="inline-flex items-center rounded-xl px-4 py-2 bg-emerald-600 text-white text-sm font-medium shadow hover:bg-emerald-700">Reservar evaluación</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1581594693700-8afcf3fe13cf?q=80&w=1600&auto=format&fit=crop" alt="Clínica y pabellón" class="h-full w-full object-cover opacity-30">
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-3xl glass rounded-3xl p-8 sm:p-12 shadow">
+        <h1 class="text-3xl sm:text-5xl font-bold leading-tight text-slate-900">Procedimientos ambulatorios y <span class="text-emerald-700">cirugía menor</span> en El Golf</h1>
+        <p class="mt-4 text-lg text-slate-700">Hub de derivaciones en edificio de consultas. Telemedicina para triage y agenda. Box equipados + pabellón menor on‑demand.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contacto" class="inline-flex items-center rounded-xl px-5 py-3 bg-emerald-600 text-white font-medium shadow hover:bg-emerald-700">Agendar evaluación</a>
+          <a href="#planes" class="inline-flex items-center rounded-xl px-5 py-3 bg-white border border-slate-200 font-medium hover:bg-slate-50">Ver planes</a>
+        </div>
+        <div class="mt-6 text-sm text-slate-600">📍 El Golf, Las Condes — a pasos de Metro Alcántara (L1)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-slate-700">
+      <div class="flex items-center gap-2">✅ <span>Derivaciones internas del clúster</span></div>
+      <div class="flex items-center gap-2">🕒 <span>Time‑to‑market rápido</span></div>
+      <div class="flex items-center gap-2">🧼 <span>Sala de trabajo sucio</span></div>
+      <div class="flex items-center gap-2">♿ <span>Accesibilidad universal</span></div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl sm:text-3xl font-bold">Servicios</h2>
+        <p class="mt-2 text-slate-600">Box clínicos por hora/jornada, pabellón de cirugía menor por bloque de 90′ y agenda online con triage por telemedicina.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+          <h3 class="font-semibold">Box clínico</h3>
+          <p class="mt-2 text-sm text-slate-600">Consultas presenciales, procedimientos menores, curaciones e infiltraciones.</p>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Equipamiento base (camilla, lavamanos)</li>
+            <li>Recepción y aseo ligero</li>
+            <li>Agenda compartida</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+          <h3 class="font-semibold">Pabellón menor</h3>
+          <p class="mt-2 text-sm text-slate-600">Procedimientos ambulatorios sin hospitalización, 90 minutos por bloque.</p>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Set estándar y esterilización externa</li>
+            <li>Apoyo TENS/arsenalera (opcional)</li>
+            <li>Manejo de residuos y sala sucia</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+          <h3 class="font-semibold">Telemedicina</h3>
+          <p class="mt-2 text-sm text-slate-600">Triage y derivaciones hacia box/pabellón. Funnel digital siempre encendido.</p>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Reserva online</li>
+            <li>Recordatorios y NPS</li>
+            <li>Pagos digitales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section id="planes" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl sm:text-3xl font-bold">Planes</h2>
+        <p class="mt-2 text-slate-600">Elige el formato que calza con tu práctica. Precios de referencia, a definir por especialidad.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <!-- Plan Box -->
+        <div class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+          <h3 class="font-semibold">Box</h3>
+          <p class="mt-2 text-sm text-slate-600">Por hora o jornada</p>
+          <div class="mt-4 text-3xl font-bold">$18.000<span class="text-base font-medium text-slate-500"> /h</span></div>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Recepción y aseo</li>
+            <li>Agenda y recordatorios</li>
+            <li>Soporte básico</li>
+          </ul>
+          <a href="#contacto" class="mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 bg-emerald-600 text-white font-medium hover:bg-emerald-700">Reservar</a>
+        </div>
+        <!-- Plan Pabellón -->
+        <div class="rounded-2xl border-2 border-emerald-600 p-6 shadow-md relative">
+          <span class="absolute -top-3 right-4 bg-emerald-600 text-white text-xs px-2 py-1 rounded-full">Recomendado</span>
+          <h3 class="font-semibold">Pabellón menor</h3>
+          <p class="mt-2 text-sm text-slate-600">Bloques de 90′</p>
+          <div class="mt-4 text-3xl font-bold">$150.000<span class="text-base font-medium text-slate-500"> /bloque</span></div>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Set estándar</li>
+            <li>Apoyo TENS (opcional)</li>
+            <li>Gestión de residuos</li>
+          </ul>
+          <a href="#contacto" class="mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 bg-emerald-600 text-white font-medium hover:bg-emerald-700">Agendar bloque</a>
+        </div>
+        <!-- Plan Growth -->
+        <div class="rounded-2xl border border-slate-200 p-6 shadow-sm">
+          <h3 class="font-semibold">Growth</h3>
+          <p class="mt-2 text-sm text-slate-600">Funnel + revenue‑share</p>
+          <div class="mt-4 text-3xl font-bold">20–30%<span class="text-base font-medium text-slate-500"> /procedimiento</span></div>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Marketing local</li>
+            <li>Derivaciones internas</li>
+            <li>Soporte de agenda y cobros</li>
+          </ul>
+          <a href="#contacto" class="mt-6 inline-flex w-full justify-center rounded-xl px-4 py-2 bg-emerald-600 text-white font-medium hover:bg-emerald-700">Solicitar demo</a>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">Precios referenciales + IVA. Sujetos a especialidad, insumos y soporte requerido.</p>
+    </div>
+  </section>
+
+  <!-- Ubicación -->
+  <section id="ubicacion" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold">Ubicación</h2>
+          <p class="mt-2 text-slate-600">El Golf, Las Condes — a pasos de <strong>Metro Alcántara</strong> (L1). Estacionamientos pagados en el sector.</p>
+          <ul class="mt-4 text-sm list-disc list-inside text-slate-600">
+            <li>Edificio de consultas (clúster de salud)</li>
+            <li>Accesibilidad universal ♿</li>
+            <li>Conectividad peatonal y transporte</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow border border-slate-200">
+          <iframe title="Mapa El Golf" src="https://www.google.com/maps?q=Metro%20Alc%C3%A1ntara,%20Las%20Condes&output=embed" class="w-full h-80"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  $1
+<div id="alerta-gracias" class="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 text-emerald-900 p-4 hidden">Gracias, recibimos tu solicitud. Te contactaremos por correo/WhatsApp en breve.</div>
+<div class="mt-8 grid md:grid-cols-5 gap-6">
+        <form name="contacto"$1 action="/?gracias=1">
+<input type="hidden" name="form-name" value="contacto">
+<p class="hidden" aria-hidden="true"><label>No completar: <input name="bot-field"></label></p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium">Nombre y Apellido</label>
+              <input name="nombre" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-emerald-600 focus:ring-emerald-600" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" name="email" required class="mt-1 w-full rounded-xl border-slate-300 focus:border-emerald-600 focus:ring-emerald-600" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Teléfono</label>
+              <input name="telefono" class="mt-1 w-full rounded-xl border-slate-300 focus:border-emerald-600 focus:ring-emerald-600" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Especialidad</label>
+              <input name="especialidad" class="mt-1 w-full rounded-xl border-slate-300 focus:border-emerald-600 focus:ring-emerald-600" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-medium">¿Qué necesitas?</label>
+              <select name="necesidad" class="mt-1 w-full rounded-xl border-slate-300 focus:border-emerald-600 focus:ring-emerald-600">
+                <option>Box por hora/jornada</option>
+                <option>Pabellón menor por bloque</option>
+                <option>Plan Growth (funnel + revenue‑share)</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-medium">Mensaje</label>
+              <textarea name="mensaje" rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-emerald-600 focus:ring-emerald-600"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="mt-4 inline-flex items-center rounded-xl px-5 py-3 bg-emerald-600 text-white font-medium shadow hover:bg-emerald-700">Enviar</button>
+          <p class="mt-2 text-xs text-slate-500">Al enviar aceptas nuestra política de privacidad.</p>
+        </form>
+        <aside class="md:col-span-2 rounded-2xl border border-slate-200 p-6 shadow-sm bg-white">
+  <div class="space-y-3 text-sm text-slate-700">
+    <p class="font-semibold">Contacto (protegido)</p>
+    <p>Para evitar spam, no publicamos WhatsApp ni email en el sitio. Completa el formulario y te respondemos en &lt; 24 horas hábiles.</p>
+    <hr class="my-4"/>
+    <p class="font-semibold">Horarios</p>
+    <p>Lunes a viernes, 08:30–20:00</p>
+    <p class="text-xs text-slate-500">Atención por agenda. Procedimientos sujetos a evaluación clínica. No atendemos urgencias.</p>
+  </div>
+</aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Clínica Calán. Todos los derechos reservados.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:text-emerald-700">Política de privacidad</a>
+        <a href="#" class="hover:text-emerald-700">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Mostrar alerta de éxito si viene ?gracias=1 en la URL
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('gracias') === '1') {
+        const alert = document.getElementById('alerta-gracias');
+        if (alert) alert.classList.remove('hidden');
+        // Limpia el querystring para evitar re-mostrar tras recargar
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    } catch (e) {}
+  
+  </script>
+</body>
+</html>
